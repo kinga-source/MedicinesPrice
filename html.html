@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BillSplitter</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="nameOfCalculator">
+            <h1>Price of the medicines</h1>
+        </div>
+        <div class="input-forms">
+            <label for="medicinePrice">Name:</label>
+            <select id="medicinePrice">
+                <option value="0" disabled selected>- select medicine -</option>
+                <option value="20">Apap-60tab-20PLN</option>
+                <option value="34">Solpadeine-12tab-34PLN</option>
+                <option value="15">Ibum-10tab-15PLN</option>
+                <option value="22">NO-SPA-3tab-13PLN</option>
+            </select>
+
+            <label for="packages">Number of packages:</label>
+            <input type="number" id="packages">
+
+            <label for="refound">Refound</label>
+            <select id="refound">
+                <option value="0" disabled selected>- select refound -</option>
+                <option value="-0.05">5%</option>
+                <option value="-0.1">10%</option>
+                <option value="-0.15">15%</option>
+                <option value="-0.2">20%</option>
+            </select>
+
+            <button class="count">Calculate</button>
+            <p class="error"></p>
+            <p class="cost-info">You must pay: <span class="cost"></span>PLN </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
